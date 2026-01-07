@@ -1,0 +1,5 @@
+Vooskeemi ülesandeid spetsiifiliselt ei ole, peale järgnevate juhiste:
+
+Enne repos olevate muude ülesannete lahendamist, tee vastavale programmeerimisülesandele vooskeem, ja siis alles programmeeri.
+
+Kõik, häf fun
