@@ -77,6 +77,10 @@
             // kui sisemine tsükkel on lõpetanud, siis kuva kasutajale see rida välja
             // kui ka esimene tsükkel on lõpetanud, siis kuva kasutajale tekst "tsüklid on lõpetanud"
 
+            int ruudukülg = 0;
+            Console.WriteLine("kui suurt ruutu te tahate");
+            Console.ReadLine();
+
             /* Foreach + list ülesanded */
 
             // 1. "suured summad"
