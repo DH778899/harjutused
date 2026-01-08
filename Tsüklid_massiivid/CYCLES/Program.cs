@@ -79,8 +79,17 @@
 
             int ruudukülg = 0;
             Console.WriteLine("kui suurt ruutu te tahate");
-            Console.ReadLine();
-
+           ruudukülg = int.Parse(Console.ReadLine());
+            for (int i = 0; i<ruudukülg; i++)
+            {
+                string seerida = "";
+                for (int j = 0; j<ruudukülg; j++)
+                {
+                    seerida = seerida + "HH";
+                }
+                Console.WriteLine(seerida);
+            }
+            Console.WriteLine("tsüklid on lõppenud");
             /* Foreach + list ülesanded */
 
             // 1. "suured summad"
