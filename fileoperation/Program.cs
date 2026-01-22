@@ -18,16 +18,38 @@ namespace fileoperation
             Console.WriteLine("kõik laulu sõnad");
 
             DisplayThisFile();
-
+            findword("kill");
 
 
 
 
         }
+
+        public static void findword(string findthisword)
+        {
+            using (StreamReader readfile = new StreamReader(
+                "C:\\Users\\opilane\\source\\repos\\harjutused\\fileoperation\\postkastiaadress.txt"))
+            {
+                int lnr = 0;
+                while (readfile.EndOfStream == false)
+                {
+                    string line = readfile.ReadLine();
+                    lnr++;
+
+                    if (line.Contains(findthisword) == true)
+                    {
+                        Console.WriteLine(findthisword + " leiti reast" + lnr);
+                    }
+                }
+                readfile.Close();
+            }
+        }
         private static void DisplayThisFile()
         {
             string line = "";
             try
+
+                
             {
                 using (
                     StreamReader readthisthing = new StreamReader
@@ -54,3 +76,6 @@ namespace fileoperation
         }
     }
 }
+
+
+
